@@ -7,3 +7,14 @@ app.get('/', function (req, res) {
 app.listen(port, () => {
     console.log('Server is running on port ${port}');
 });
+app.route('/Node').get(function(req,res){
+    res.send("Testing my Node Skills");
+});
+
+app.route('/Angular').get(function(req, res){
+        res.send("Check Out My Angular Skills");
+});
+
+app.get('/', function (req, res){
+    res.send('I taught myself this. :-)');
+});
